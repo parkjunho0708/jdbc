@@ -121,7 +121,7 @@ public class ArtistDao {
 
 		try {
 			connection = getConnection();
-			String sql = "delete from artist";
+			String sql = "delete from emaillist";
 			pstmt = connection.prepareStatement(sql);
 			pstmt.executeUpdate();
 		} catch (SQLException e) {
